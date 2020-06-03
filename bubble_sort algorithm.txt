@@ -1,0 +1,30 @@
+#include <iostream>
+#include <conio.h>
+#include <stdio.h>
+using std namespace;
+
+int main(){
+	int A[] = {2,7,1,43,23,99,34,65,56};
+	bubble_sort(A,9);
+	for (int i = 0; i <9; i++)
+	{
+		cout<< A[i]<< " ";
+	}
+}
+void bubble_sort(int A[], int N){
+	int round,temp,flag;
+	for(round=1; round<N-1; round++){
+		flag=0;
+		for(int i=0;i<N-1-round; i++){
+			if (A[i]>A[i+1])
+			{	
+				flag=1;
+				temp=A[i];
+				A[i]=A[i+1];
+				A[i+1]= temp;
+			}
+		}
+		if (flag==0)
+			return;
+	}
+}
