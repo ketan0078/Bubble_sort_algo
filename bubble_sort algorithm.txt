@@ -1,7 +1,7 @@
 #include <iostream>
-#include <conio.h>
+
 #include <stdio.h>
-using std namespace;
+using namespace std;
 
 int main(){
 	int A[] = {2,7,1,43,23,99,34,65,56};
